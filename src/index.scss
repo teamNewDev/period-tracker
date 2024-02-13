@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(149.47deg, #030c2e 11.78%, #0b214c 66.18%, #030c2e 89.15%);
+}
+
+.app {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto';
+  background-image: url('./assets/irregularShapes.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
