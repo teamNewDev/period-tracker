@@ -1,14 +1,26 @@
-.period-log-input {
-  height: 12em;
-  overflow: scroll;
+.vertical-menu-container {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 12em;
   text-align: center;
+  margin: 7em 0;
 
-  .input {
-    font-size: 1.7em;
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-item {
+    padding: 0.4em;
+    font-size: 1.2em;
+    color: #ffffffaf;
+    font-weight: 500;
   }
 
   .selected {
-    background-color: green;
+    background: #e43e93;
+    color: #fff;
+    font-size: 1.4em;
   }
 }
 

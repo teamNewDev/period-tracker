@@ -1,20 +1,20 @@
 import { useState } from 'react'
-import { PeriodCalender } from '../common'
+import { PeriodCalender, VerticalMenu } from '../common'
 import './index.scss'
 
 const InitialSetUpPage = () => {
-  const [periodLog, setPeriodLog] = useState({ cycleLength: '', periodLength: '', lastPeriodDate: '2' })
+  const [periodLog, setPeriodLog] = useState({ cycleLength: '2', periodLength: '', lastPeriodDate: '' })
 
   return (
-    <div className="set-up-page">
+    <>
       {periodLog.cycleLength && (
-        <div className="page-wrapper">
-          <div>
+        <div className="set-up-page">
+          <div className="header">
             <p className="title">How long is your average cycle?</p>
             <span className="subtitle">If you’re irregular or not sure, tap ‘Not Sure’</span>
           </div>
 
-          {/* <PeriodLogInput /> */}
+          <VerticalMenu />
 
           <div className="button-wrapper">
             <button type="button" className="not-sure-button">
@@ -68,7 +68,7 @@ const InitialSetUpPage = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   )
 }
 
