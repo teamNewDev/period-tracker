@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import womanWithFile from '../../assets/womanWithFIle.svg'
-import './index.scss'
+import './getStartedPage.scss'
 
 const GetStartedPage = () => {
   const navigate = useNavigate()
