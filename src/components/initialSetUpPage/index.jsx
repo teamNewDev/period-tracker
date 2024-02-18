@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { PeriodCalender, VerticalMenu } from '../common'
-import './index.scss'
+import './initialSetUpPage.scss'
 
 const InitialSetUpPage = () => {
   const [periodLog, setPeriodLog] = useState({ cycleLength: '2', periodLength: '', lastPeriodDate: '' })
