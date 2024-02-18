@@ -1,0 +1,28 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.5em;
+  background: #2337701d;
+  border-top: 0.01em solid #ffffff16;
+  transition: all 2.5s ease-in-out;
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+    text-decoration: none;
+    width: 100%;
+    color: #d9d9d9;
+    font-weight: 500;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .active {
+    color: #f3439d;
+  }
+}
